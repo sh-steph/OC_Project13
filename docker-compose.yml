@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mdd_db:
+    image: mysql
+    command: --default-authentication-plugin=caching_sha2_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'oc_poc'
+      MYSQL_USER: 'oc_user'
+      MYSQL_PASSWORD: 'oc_pwd'
+      MYSQL_ROOT_PASSWORD: 'oc_pwd'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./resources/sql/script.sql:/docker-entrypoint-initdb.d/script.sql
