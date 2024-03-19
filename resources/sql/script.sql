@@ -18,11 +18,6 @@ CREATE TABLE IF NOT EXISTS `MESSAGES` (
 
 ALTER TABLE `MESSAGES` ADD CONSTRAINT `MESSAGES_fk2` FOREIGN KEY (`user_id`) REFERENCES `USERS`(`id`);
 
-INSERT INTO USERS (username, password, admin)
-VALUES ('Service', 'Service', true);
-INSERT INTO USERS (username, password, admin)
-VALUES ('Client', 'Client', false);
-
 INSERT INTO MESSAGES (chat_id, user_id, message, created_at)
 VALUES (1, 1, "Bonjour, je suis à votre écoute pour toute question. Service Client", NOW());
 
