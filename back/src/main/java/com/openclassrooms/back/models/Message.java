@@ -9,7 +9,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "COMMENTS")
+@Table(name = "MESSAGES")
 @Data
 @Accessors(chain = true)
 @EntityListeners(AuditingEntityListener.class)
@@ -26,10 +26,6 @@ public class Message {
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User userId;
-
-    @NonNull
-    @Column(name = "chat_id")
-    private Long chatId;
 
     @NonNull
     @Column(name = "message")
