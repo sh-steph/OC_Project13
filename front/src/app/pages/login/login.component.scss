@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  app-header {
+    display: none;
+  }
+}
+
+.custom-image {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.login {
+  margin-top: 30px;
+  mat-card {
+    margin: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.bi-arrow-left {
+  font-size: 2rem;
+  color: black;
+}

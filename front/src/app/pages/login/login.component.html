@@ -1,0 +1,39 @@
+
+<div class="container">
+    <div class="col-12 text-center">
+      <h1>Se connecter</h1>
+    </div>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-4">
+        <label>Nom d'utilisateur</label>
+        <input
+          type="text"
+          class="form-control col-12 mb-3"
+          formControlName="username"
+          name="username"
+          required
+        />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-4">
+        <label>Mot de passe</label>
+        <input
+          type="password"
+          class="form-control col-12 mb-3"
+          formControlName="password"
+          name="password"
+          required
+        />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3 text-center">
+        <button class="button-base" [disabled]="form.invalid" type="submit">
+          <p class="text-color">Se connecter</p>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
