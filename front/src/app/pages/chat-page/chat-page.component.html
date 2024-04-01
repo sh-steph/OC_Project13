@@ -1,8 +1,18 @@
 <p>chat-page works!</p>
-<div class="row justify-content-center">
-  <div class="col-4 col-md-2 text-center">
-    <button class="disconnect-button">
-      <p (click)="disconnect()" class="disconnect-text">Se déconnecter</p>
-    </button>
+<div *ngFor="let string of greetings">
+  <div class="container">
+    <p>{{ string }}</p>
   </div>
 </div>
+<form [formGroup]="messageForm" (ngSubmit)="sendMessage()">
+  <div class="row row-text-area-custom">
+    <textarea
+      class="col-10 col-md-10 offset-md-1 comment-textarea"
+      #myTextArea
+      formControlName="message"
+      required
+    ></textarea>
+    <button class="col-2 col-md-1" type="submit">Send</button>
+  </div>
+</form>
+<button class="col-2 col-md-1" (click)="disconnect()">Disconnect</button>
