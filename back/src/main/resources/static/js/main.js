@@ -23,7 +23,7 @@ function connect(event) {
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
-        var socket = new SockJS('/websocket');
+        var socket = new SockJS('/chatlive');
         stompClient = Stomp.over(socket);
 
         stompClient.connect({}, onConnected, onError);
@@ -47,7 +47,7 @@ function onConnected() {
 
 
 function onError(error) {
-    connectingElement.textContent = 'Não foi possível se conectar ao WebSocket! Atualize a página e tente novamente ou entre em contato com o administrador.';
+    connectingElement.textContent = 'Il n\'a pas été possible de se connecter à WebSocket ! Créez une page et une page d\'accueil récemment ou entrez en contact avec l\'administrateur.';
     connectingElement.style.color = 'red';
 }
 
