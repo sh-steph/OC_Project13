@@ -9,9 +9,9 @@ L'application **Live Chat** a pour but dans le cadre du projet de permettre au c
 
 ## Prérequis
 
-Docker
-Java 11
-Maven 3.9.4
+- Docker
+- Java 11
+- Maven 3.9.4
 
 ## Par où commencer ?
 
@@ -52,9 +52,9 @@ The **Live Chat** application aims within the scope of the project to allow the 
 
 ## Configuration
 
-Docker
-Java 11
-Maven 3.9.4
+- Docker
+- Java 11
+- Maven 3.9.4
 
 ## Where to start ?
 
