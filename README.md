@@ -46,8 +46,6 @@ La messagerie instantannée sera accessible via l'url suivant `http://localhost:
 
 This project was developed as part of an OpenClassrooms training program where the student is required to develop a live chat proof of concept (POC).
 
-L'application **Live Chat** a pour but dans le cadre du projet de permettre au client de directement communiquer avec le support via par messagerie instantannée.
-
 The **Live Chat** application aims within the scope of the project to allow the client to communicate directly with the support through an instant messaging.
 
 ## Configuration
