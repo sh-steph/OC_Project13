@@ -7,6 +7,12 @@ Ce projet a été développé dans le cadre d'une formation OpenClassrooms où l
 
 L'application **Live Chat** a pour but dans le cadre du projet de permettre au client de directement communiquer avec le support via par messagerie instantannée.
 
+## Prérequis
+
+Docker
+Java 11
+Maven 3.9.4
+
 ## Par où commencer ?
 
 Executer la base de donnée en vous rendant à la racine de projet en executant la commande suivante :
@@ -16,6 +22,8 @@ Executer la base de donnée en vous rendant à la racine de projet en executant 
 ```
 
 Puis importer le dossier **back** dans votre IDE dédié (IntelliJ, Eclipse...).
+
+Run le projet sur la classe principale **PocdemoApplication**.
 
 La messagerie instantannée sera accessible via l'url suivant `http://localhost:8081/` (Ouvrir deux onglets pour pouvoir intéragir entre deux personnes).
 
@@ -42,6 +50,12 @@ L'application **Live Chat** a pour but dans le cadre du projet de permettre au c
 
 The **Live Chat** application aims within the scope of the project to allow the client to communicate directly with the support through an instant messaging.
 
+## Configuration
+
+Docker
+Java 11
+Maven 3.9.4
+
 ## Where to start ?
 
 To run the database, navigate to the project root and execute the following command:
@@ -51,6 +65,8 @@ To run the database, navigate to the project root and execute the following comm
 ```
 
 Then import the back folder into your dedicated IDE (IntelliJ, Eclipse, etc.).
+
+Run the project on the main class **PocdemoApplication**.
 
 The instant messaging service will be accessible through the following URL: `http://localhost:8081/` (Open two tabs to interact between two individuals).
 
